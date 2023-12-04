@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,13 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!-- And this is how we link up the JS! -->
     <script defer src="js/main.js"></script>
+    <script defer src="js/Script.js"></script>
     <!-- A fun title -->
-    <title>Empowering Tic Tac Toe for the Good of Humanity</title>
+    <title>TicTacToe Nathan G</title>
 </head>
 <body>
     <h1>Tic-Tac-Toe</h1>
-    <h2>It's X's turn!</h2>
+    <h2>C'est à X de jouer</h2>
     <!-- Many websites are just divs on divs on divs. -->
     <div class="flex-container flex-column">
         <div class="flex-container flex-wrap" id="board">
@@ -27,8 +28,35 @@
         <div class="square"></div>
         <div class="square"></div>
         </div>
-        <!-- I added a little reset button because our users are going to want to play round after round of our glorious game without ever refreshing the browser! -->
-        <button id="reset-button">reset</button>
+
+
+        <div id="BoxVictoire">
+            <div>
+                Victoire O 
+                <div id="Victoire-O">0</div>
+            </div>
+            <!-- I added a little reset button because our users are going to want to play round after round of our glorious game without ever refreshing the browser! -->
+            <button id="reset-button">Recommencer</button>
+            <div>
+                Victoire X
+                <div id="Victoire-X">0</div>
+            </div>
+        </div>
+        
     </div>
+
+    <footer>
+        <div id="sourceProjet">
+            <div>Inspiration du projet</div>
+            <div><a href="https://github.com/annaelizabeth2019/tictactoetwo">https://github.com/annaelizabeth2019/tictactoetwo</a></div>
+        </div>
+        <div id="nomGroupe">
+            <div>Nathan Grondin</div>
+            <div>Design Web A2023</div>
+        </div>
+        <div id="photoMoi">
+            <img id="PhotoPerso" src="/Photo/370294911_378699667914893_5950228367135792093_n.jpg" alt="Photo de moi" width="70px" height="80px">
+        </div>
+    </footer>
 </body>
 </html>
