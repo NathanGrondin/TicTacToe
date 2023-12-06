@@ -81,20 +81,20 @@ localStorage.setItem("ScoreX", 0) /* Initialise la variable Pour le score*/
 localStorage.setItem("ScoreO", 0) /*                 //                   */
 
 function ScoreUpdate(winner) {
-    if (winner === 'X') { /* Regarde si X à gagné */
-        let textScoreX = document.getElementById('Victoire-X'); /* Associe avec HTML */
-        let scoreX = localStorage.getItem("ScoreX"); /* Associe avec Storage Local */
-        let winJoueurX = parseInt(scoreX); /* Transforme la valeur du stockage local en int */
-        winJoueurX += 1; /* Ajoute un au score de X */
-        localStorage.setItem("ScoreX", winJoueurX); /* Met la variable dans le stockage local */
-        textScoreX.textContent = winJoueurX; /* Affiche le score sur le site Web */
+    if (winner === 'X') {                                               /* Regarde si X à gagné */
+        let textScoreX = document.getElementById('Victoire-X');         /* Associe avec HTML */
+        let scoreX = localStorage.getItem("ScoreX");                    /* Associe avec Storage Local */
+        let winJoueurX = parseInt(scoreX);                              /* Transforme la valeur du stockage local en int */
+        winJoueurX += 1;                                                /* Ajoute un au score de X */
+        localStorage.setItem("ScoreX", winJoueurX);                     /* Met la variable dans le stockage local */
+        textScoreX.textContent = winJoueurX;                            /* Affiche le score sur le site Web */
 
-    } else if (winner === 'O') { /* Regarde si O à gagné */
-        let textScoreO = document.getElementById('Victoire-O'); /* Associe avec HTML */
-        let scoreO = localStorage.getItem("ScoreO"); /* Associe avec Storage Local */
-        let winJoueurO = parseInt(scoreO); /* Transforme la valeur du stockage local en int */
-        winJoueurO += 1; /* Ajoute un au score de X */
-        localStorage.setItem("ScoreO", winJoueurO); /* Met la variable dans le stockage local */
-        textScoreO.textContent = winJoueurO; /* Affiche le score sur le site Web */
+    } else if (winner === 'O') {                                        /* Regarde si O à gagné */
+        let textScoreO = document.getElementById('Victoire-O');         /* Associe avec HTML */
+        let scoreO = localStorage.getItem("ScoreO");                    /* Associe avec Storage Local */
+        let winJoueurO = parseInt(scoreO);                              /* Transforme la valeur du stockage local en int */
+        winJoueurO += 1;                                                /* Ajoute un au score de X */
+        localStorage.setItem("ScoreO", winJoueurO);                     /* Met la variable dans le stockage local */
+        textScoreO.textContent = winJoueurO;                            /* Affiche le score sur le site Web */
     }
 }
