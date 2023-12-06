@@ -77,8 +77,8 @@ init();
 
 /* Fonction Pour Compter le score */
 
-localStorage.setItem("ScoreX", 0) /* Initialise les variable Pour le score*/
-localStorage.setItem("ScoreO", 0) /*                ///                   */
+localStorage.setItem("ScoreX", 0) /* Initialise la variable Pour le score*/
+localStorage.setItem("ScoreO", 0) /*                 //                   */
 
 function ScoreUpdate(winner) {
     if (winner === 'X') { /* Regarde si X à gagné */
@@ -90,7 +90,6 @@ function ScoreUpdate(winner) {
         textScoreX.textContent = winJoueurX; /* Affiche le score sur le site Web */
 
     } else if (winner === 'O') { /* Regarde si O à gagné */
-
         let textScoreO = document.getElementById('Victoire-O'); /* Associe avec HTML */
         let scoreO = localStorage.getItem("ScoreO"); /* Associe avec Storage Local */
         let winJoueurO = parseInt(scoreO); /* Transforme la valeur du stockage local en int */
