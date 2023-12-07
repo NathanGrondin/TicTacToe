@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
 body {
     text-align: center;
     background-color: rgb(245, 235, 224);
@@ -58,12 +60,8 @@ h2 {
 
 /* Mon code a partir d'ici */
 
-@font-face {
-    font-family: "xoFont"; 
-    src: url("/font/font3/Marhey-VariableFont_wght.ttf"); 
-}
 div.square{
-    font-family: "xoFont", "Times New Roman";
+    font-family: 'Noto Sans JP', sans-serif;
 }
 footer {
     /* Initialiser Grid */
