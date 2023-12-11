@@ -74,7 +74,7 @@ function render() {
     };
 
 init();
-
+ 
 /* Fonction Pour Compter le score */
 
 localStorage.setItem("ScoreX", 0) /* Initialise la variable Pour le score*/
